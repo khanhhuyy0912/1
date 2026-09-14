@@ -53,8 +53,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDownloadModal 
           {/* Col 1 & 2: Brand & Mission */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-500 to-sky-400 flex items-center justify-center text-white font-mono font-bold text-xs tracking-wider shadow-md shadow-indigo-500/30">
-                TKH
+              <div className="w-8 h-8 rounded-xl overflow-hidden shadow-md shadow-indigo-500/30 shrink-0">
+                <img src={personalInfo.avatar} alt={personalInfo.name} className="w-full h-full object-cover" />
               </div>
               <span className="font-bold text-lg text-zinc-900 dark:text-zinc-100">
                 {personalInfo.name}
