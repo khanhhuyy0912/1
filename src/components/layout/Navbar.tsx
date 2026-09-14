@@ -68,11 +68,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           <motion.div
             whileHover={{ scale: 1.08, rotate: 2 }}
             whileTap={{ scale: 0.95 }}
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-sky-400 to-teal-300 p-0.5 shadow-md shadow-indigo-500/25 flex items-center justify-center relative overflow-hidden"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl shadow-md shadow-indigo-500/25 relative overflow-hidden shrink-0 ring-1 ring-white/40 dark:ring-white/10"
           >
-            <div className="w-full h-full bg-zinc-950/90 backdrop-blur-xs rounded-[10px] flex items-center justify-center text-white font-mono font-bold text-xs tracking-wider">
-              TKH
-            </div>
+            <img
+              src={personalInfo.avatar}
+              alt={personalInfo.name}
+              className="w-full h-full object-cover"
+            />
             {/* Liquid shimmer overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none" />
           </motion.div>
